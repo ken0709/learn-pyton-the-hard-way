@@ -31,4 +31,24 @@ SyntaxError: invalid syntax
 
 原因：在中文输入法下输入的时候
 解决办法： 切换到英文输入 逗号
+
+7)  python ex14.py no shanghai mac
+Traceback (most recent call last):
+  File "ex14.py", line 3, in <module>
+    script, user_name = argv
+ValueError: too many values to unpack
+
+原因：后面的参数跟的太多了，应该只有1个？
+解决办法：python ex14.py zed
+
+8）
+  File "ex14.py", line 6, in <module>
+    print "Hi %s, I'm the %s script." % (user_name)
+TypeError: not enough arguments for format string
+
+原因：在第6行，没有填写足够的参数，漏掉了参数
+解决：添加上print "Hi %s, I'm the %s script." % (user_name,script)
+
+9) #ex16 ‘w’创建一个文件
+10）ex17 copy文件内容 到一个新文件中
 333
